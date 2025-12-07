@@ -130,11 +130,11 @@ const GameModes = ({ isOpen, onClose, currentDojo }: GameModesProps) => {
                     setSelectedGameMode(mode.id);
                   }}
                   className={clsx(
-                    'w-full p-5 rounded-xl text-left transition-all hover:cursor-pointer',
-                    'border-2 flex items-center gap-4',
+                    'w-full p-5 rounded-xl text-left hover:cursor-pointer',
+                    'border-2 flex items-center gap-4 bg-[var(--card-color)]',
                     isSelected
-                      ? 'border-[var(--main-color)] bg-[var(--main-color)]/10'
-                      : 'border-[var(--border-color)] bg-[var(--card-color)] hover:border-[var(--main-color)]/50'
+                      ? 'border-[var(--main-color)] '
+                      : 'border-[var(--border-color)]  '
                   )}
                 >
                   {/* Icon */}
@@ -142,7 +142,7 @@ const GameModes = ({ isOpen, onClose, currentDojo }: GameModesProps) => {
                     className={clsx(
                       'w-12 h-12 rounded-xl flex items-center justify-center shrink-0',
                       isSelected
-                        ? 'bg-[var(--main-color)] text-white'
+                        ? 'bg-[var(--main-color)] text-[var(--background-color)]'
                         : 'bg-[var(--border-color)] text-[var(--muted-color)]'
                     )}
                   >
@@ -153,15 +153,13 @@ const GameModes = ({ isOpen, onClose, currentDojo }: GameModesProps) => {
                   <div className='flex-1 min-w-0'>
                     <h3
                       className={clsx(
-                        'text-lg font-semibold',
-                        isSelected
-                          ? 'text-[var(--main-color)]'
-                          : 'text-[var(--secondary-color)]'
+                        'text-lg font-medium',
+                        'text-[var(--main-color)]'
                       )}
                     >
                       {mode.title}
                     </h3>
-                    <p className='text-sm text-[var(--muted-color)] mt-0.5'>
+                    <p className='text-sm text-[var(--secondary-color)] mt-0.5'>
                       {mode.description}
                     </p>
                   </div>
@@ -171,13 +169,13 @@ const GameModes = ({ isOpen, onClose, currentDojo }: GameModesProps) => {
                     className={clsx(
                       'w-5 h-5 rounded-full border-2 shrink-0 flex items-center justify-center',
                       isSelected
-                        ? 'border-[var(--main-color)] bg-[var(--main-color)]'
+                        ? 'border-[var(--secondary-color)] bg-[var(--secondary-color)]'
                         : 'border-[var(--border-color)]'
                     )}
                   >
                     {isSelected && (
                       <svg
-                        className='w-3 h-3 text-white'
+                        className='w-3 h-3 text-[var(--background-color)]'
                         fill='none'
                         viewBox='0 0 24 24'
                         stroke='currentColor'
