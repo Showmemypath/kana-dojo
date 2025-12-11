@@ -1,7 +1,6 @@
 import type { Sponsor } from './types';
 
 // Manual list of Ko‑fi supporters.
-
 export const KO_FI_SUPPORTERS: Sponsor[] = [
   {
     login: 'Ko‑fi Supporter',
@@ -32,11 +31,6 @@ export const KO_FI_SUPPORTERS: Sponsor[] = [
     login: 'Kostas',
     avatar: 'https://api.dicebear.com/6.x/initials/svg?seed=Kostas',
     url: 'https://ko-fi.com/V7V2J6YY',
-  },
-  {
-    login: 'jabowocky',
-    avatar: 'https://api.dicebear.com/6.x/initials/svg?seed=jabowocky',
-    url: 'https://ko-fi.com/S6S01KBIKG',
   },
   {
     login: 'Serge',
