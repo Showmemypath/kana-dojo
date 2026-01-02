@@ -29,7 +29,7 @@ import useStatsStore from '../../store/useStatsStore';
 import { useStatsAggregator } from '../../hooks/useStatsAggregator';
 import OverviewStatsCard from './OverviewStatsCard';
 import CharacterMasteryPanel from './CharacterMasteryPanel';
-import BlitzStatsPanel from './TimedModeStatsPanel';
+import TimedModeStatsPanel from './TimedModeStatsPanel';
 import GauntletStatsPanel from './GauntletStatsPanel';
 import MasteryDistributionChart from './MasteryDistributionChart';
 import AchievementSummaryBar from './AchievementSummaryBar';
@@ -244,7 +244,7 @@ export default function StatsPage({ className }: StatsPageProps) {
 
             {/* Second two-column row */}
             <div className='grid grid-cols-1 gap-6 lg:grid-cols-2'>
-              <BlitzStatsPanel
+              <TimedModeStatsPanel
                 kanaStats={stats.timedKana}
                 kanjiStats={stats.timedKanji}
                 vocabularyStats={stats.timedVocabulary}
