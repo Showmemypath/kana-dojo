@@ -114,11 +114,7 @@ const ActiveTile = memo(
         transition={springConfig}
         lang={isKanji ? 'ja' : undefined}
       >
-        <FuriganaText
-          text={char}
-          reading={reading}
-          className='flex items-center justify-center'
-        />
+        <FuriganaText text={char} reading={reading} />
       </motion.button>
     );
   }
@@ -147,11 +143,7 @@ const BlankTile = memo(
         )}
       >
         <span className='opacity-0'>
-          <FuriganaText
-            text={char}
-            reading={reading}
-            className='flex items-center justify-center'
-          />
+          <FuriganaText text={char} reading={reading} />
         </span>
       </div>
     );
